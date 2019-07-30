@@ -47,7 +47,7 @@ for the selection of pages. You also have the possibility to exclude certain dok
            pages {
              config {
                excludedDoktypes = 137, 138
-               additionalWhere = AND (no_index = 0 OR no_follow = 0)
+               additionalWhere = (no_index = 0 OR no_follow = 0)
              }
            }
          }
@@ -70,7 +70,7 @@ RecordsXmlSitemapDataProvider. You can add for example a sitemap for news record
                   table = news_table
                   sortField = sorting
                   lastModifiedField = tstamp
-                  additionalWhere = AND (no_index = 0 OR no_follow = 0)
+                  additionalWhere = (no_index = 0 OR no_follow = 0)
                   pid = <page id('s) containing news records>
                   recursive = <number of subpage levels taken into account beyond the pid page. (default: 0)>
                   url {
